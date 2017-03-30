@@ -35,6 +35,13 @@
 
 
     /**
+	* Database
+	*
+	*/
+	$config["database"] = include("db_config.php");
+
+
+    /**
     * CSS
     *
     */
@@ -56,10 +63,10 @@
     * Page
     *
     */
-    $config["page"] = "pages/" . $config["URL"]["mainPage"] . ".php";
+    $config["page"] = $config["URL"]["mainPage"];
 
-    if(!file_exists($config["page"])) {
-        $config["page"] = "pages/error.php";
+    if(!file_exists('views/' . $config["page"] . '.tpl.php')) {
+        $config["page"] = "error";
     }
 
 
@@ -68,4 +75,5 @@
     *
     */
     $config["navbar"] = ["home", "projects", "about", "contact"];
+
 ?>

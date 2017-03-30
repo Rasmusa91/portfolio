@@ -1,18 +1,26 @@
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Page Heading
-                    <small>Secondary Text</small>
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-
+<div class = "projects">
         <!-- Projects Row -->
         <div class="row">
             <div class="col-md-4 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
+                <div id = "carousel-1" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-1" data-slide-to="1"></li>
+                    <li data-target="#carousel-1" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img class="first-slide" src="http://wallpapercave.com/wp/jOCMeVO.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                      <img class="second-slide" src="https://newevolutiondesigns.com/images/freebies/colorful-background-6.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                      <img class="third-slide" src="http://s1.picswalls.com/wallpapers/2014/07/19/colorful-wallpapers_11090211_65.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                </div>
                 <h3>
                     <a href="#">Project Name</a>
                 </h3>
@@ -135,3 +143,4 @@
         <!-- /.row -->
 
 <hr>
+</div>

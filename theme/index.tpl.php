@@ -19,17 +19,17 @@
     <?php endforeach; ?>
   </head>
   <body>
-    <?php include(__DIR__ . '/header.php'); ?>
+    <?php include(__DIR__ . '/header.tpl.php'); ?>
 
     <?php
         if ($config["URL"]["mainPage"] === "home") {
-            include(__DIR__ . '/carousel.php');
+            include(__DIR__ . '/../views/carousel.tpl.php');
         }
     ?>
 
     <div class="container">
-      <?php include(__DIR__ . '/../' . $config['page']); ?>
-      <?php include(__DIR__ . '/footer.php'); ?>
+      <?php include(__DIR__ . '/../views/' . $config['page'] . '.tpl.php'); ?>
+      <?php include(__DIR__ . '/footer.tpl.php'); ?>
     </div>
 
     <?php foreach($config["JS"] as $js): ?>

@@ -38,11 +38,6 @@ body {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
-.carousel {
-  height: 450px;
-  margin-bottom: 60px;
-}
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -50,15 +45,14 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 450px;
   background-color: #777;
 }
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 450px;
 }
 
 
@@ -132,4 +126,74 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
+}
+
+
+/* Home
+------------------------------------------------*/
+/* Carousel base class */
+.carousel-main.carousel {
+  height: 450px;
+  margin-bottom: 60px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-main.carousel .item {
+  height: 450px;
+}
+.carousel-main.carousel-inner > .item > img {
+  min-width: 100%;
+  height: 450px;
+}
+
+
+/* Projects
+-----------------------------------------------*/
+
+.projects {
+    margin-top: 50px;
+}
+
+/* Carousel base class */
+.projects .carousel {
+  height: 200px;
+}
+
+/* Declare heights because of positioning of img element */
+.projects .carousel .item {
+  height: 200px;
+}
+
+.projects .carousel-inner > .item > img {
+  height: 200px;
+}
+
+
+
+/* About
+-------------------------------------------- */
+.about {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about .name {
+  font-size: 48px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+.about .title {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.about .intro {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  font-size: 16px;
+}
+
+.about .profile-image {
+    width: 160px;
+    height: 160px;
 }
