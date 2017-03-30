@@ -12,15 +12,15 @@
             $this->images = $images;
         }
 
-        public getName() {
+        public function getName() {
             return $this->name;
         }
 
-        public getDescription() {
+        public function getDescription() {
             return $this->description;
         }
 
-        public getImages() {
+        public function getImages() {
             return $this->images;
         }
     }
