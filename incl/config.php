@@ -61,4 +61,11 @@
     if(!file_exists($config["page"])) {
         $config["page"] = "pages/error.php";
     }
+
+
+    /**
+    * Navbar
+    *
+    */
+    $config["navbar"] = ["home", "projects", "about", "contact"];
 ?>
