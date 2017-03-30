@@ -18,10 +18,8 @@
         <link href="<?= $css; ?>" rel="stylesheet">
     <?php endforeach; ?>
   </head>
-<!-- NAVBAR
-================================================== -->
   <body>
-    <?php include(__DIR__ . '/header.php') ?>
+    <?php include(__DIR__ . '/header.php'); ?>
 
     <?php
         if ($config["URL"]["mainPage"] === "home") {
@@ -30,13 +28,12 @@
     ?>
 
     <div class="container">
-      <?php include(__DIR__ . '/../' . $config['page']) ?>
-      <?php include(__DIR__ . '/footer.php') ?>
-    </div><!-- /.container -->
+      <?php include(__DIR__ . '/../' . $config['page']); ?>
+      <?php include(__DIR__ . '/footer.php'); ?>
+    </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <?php foreach($config["JS"] as $js): ?>
+        <script src="<?= $js; ?>"></script>
+    <?php endforeach; ?>
   </body>
 </html>
