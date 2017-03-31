@@ -8,7 +8,7 @@
     <div class="row">
     <?php endif; ?>
         <div class="col-md-4 portfolio-item">
-            <div id = "carousel-<?= $i; ?>" class="carousel slide" data-ride="carousel">
+            <div id = "carousel-<?= $i; ?>" class="carousel slide" data-ride="carousel" data-interval="false">
               <ol class="carousel-indicators">
                 <?php for ($j = 0; $j < $imgsCount; $j++): ?>
                 <li data-target="#carousel-<?= $i; ?>" data-slide-to="<?= $j; ?>"<?= ($j === 0 ? " class=\"active\"" : "") ?>></li>
@@ -23,43 +23,14 @@
               </div>
             </div>
             <h3>
-                <a href="#"><?= $projects[$i]->getName(); ?></a>
+                <?= $projects[$i]->getName(); ?>
             </h3>
             <p><?= $projects[$i]->getDescription(); ?></p>
         </div>
-    <?php if ($i % 3 === 3 || $i === count($projects) - 1): ?>
+    <?php if (($i % 3 === 2 && $i !== 0) || $i === count($projects) - 1): ?>
     </div>
     <?php endif;?>
     <?php endfor; ?>
-        <!-- Pagination -->
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.row -->
 
 <hr>
 </div>
