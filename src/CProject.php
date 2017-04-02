@@ -4,13 +4,15 @@
         private $name;
         private $description;
         private $images;
+        private $featured_image;
         private $tags;
 
-        public function __construct($name, $description, $images, $tags)
+        public function __construct($name, $description, $images, $featured_image, $tags)
         {
             $this->name = $name;
             $this->description = $description;
             $this->images = $images;
+            $this->featured_image = $featured_image;
             $this->tags = $tags;
         }
 
@@ -26,8 +28,8 @@
             return $this->images;
         }
 
-        public function getFirstImage() {
-            return $this->images[0];
+        public function getFeaturedImage() {
+            return $this->featured_image;
         }
 
         public function getTags() {

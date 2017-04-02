@@ -217,7 +217,9 @@ body {
 }
 
 /* ------------------- Carousel Styling ------------------- */
-
+.carousel {
+    margin-bottom: 50px;
+}
 .carousel-caption {
   background-color: rgba(0,0,0,.5);
   position: absolute;

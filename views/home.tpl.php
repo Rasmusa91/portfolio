@@ -12,7 +12,7 @@
             <p class="lead"><?= $p->getDescription(); ?></p>
         </div>
         <div class="col-md-5">
-            <img class = "featurette-image img-responsive center-block" src="<?= SERVER_PATH . 'img/' . $p->getFirstImage(); ?>" alt="<?= $p->getName(); ?>">
+            <img class = "featurette-image img-responsive center-block" src="<?= SERVER_PATH . 'img/' . $p->getImages()[0]; ?>" alt="<?= $p->getName(); ?>">
         </div>
     </div>
 
@@ -24,7 +24,7 @@
             <p class="lead"><?= $p->getDescription(); ?></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-            <img class = "featurette-image img-responsive center-block" src="<?= SERVER_PATH . 'img/' . $p->getFirstImage(); ?>" alt="<?= $p->getName(); ?>">
+            <img class = "featurette-image img-responsive center-block" src="<?= SERVER_PATH . 'img/' . $p->getImages()[0]; ?>" alt="<?= $p->getName(); ?>">
         </div>
     </div>
     <?php endif; ?>

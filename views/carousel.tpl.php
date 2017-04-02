@@ -13,7 +13,7 @@
         <?php for ($i = 0; $i < $projectsCount; $i++): ?>
         <?php $p = $projects[$i] ?>
         <div class="item<?= ($i === 0 ? " active" : "") ?>">
-            <img src="<?= SERVER_PATH . 'img/' . $p->getFirstImage(); ?>" alt="<?= $p->getName(); ?>">
+            <img src="<?= SERVER_PATH . 'img/' . $p->getFeaturedImage(); ?>" alt="<?= $p->getName(); ?>">
             <div class="container">
                 <div class="carousel-caption">
                     <h1><?= $p->getName(); ?></h1>
