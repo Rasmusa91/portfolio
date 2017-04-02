@@ -96,49 +96,6 @@ body {
 }
 
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-    /* Navbar positioning foo */
-    .navbar-wrapper {
-        margin-top: 20px;
-    }
-
-    .navbar-wrapper .container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .navbar-wrapper .navbar {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    /* The navbar becomes detached from the top, so we round the corners */
-    .navbar-wrapper .navbar {
-        border-radius: 4px;
-    }
-
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-        margin-bottom: 20px;
-        font-size: 21px;
-        line-height: 1.4;
-    }
-
-    .featurette-heading {
-        font-size: 50px;
-    }
-}
-
-@media (min-width: 992px) {
-    .featurette-heading {
-        margin-top: 120px;
-    }
-}
-
-
 /* Home
 ------------------------------------------------*/
 /* Carousel base class */
@@ -185,8 +142,7 @@ body {
 /* About
 -------------------------------------------- */
 .about {
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 60px;
 }
 
 .about .name {
@@ -215,51 +171,98 @@ body {
     height: 160px;
 }
 
-.about .top-bar {
-    position: relative;
-    padding-top: 15px;
-    padding-bottom: 20px;
+.about .social {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.about .social {
-    margin-bottom: 0;
-}
 .about .social a {
     display: inline-block;
     text-align: center;
     width: 32px;
     height: 32px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     border-radius: 50%;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
     padding-top: 2px;
     font-size: 16px;
     border: 2px solid;
 }
 
-.about .contact-info {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.about .contact {
     font-size: 16px;
 }
 
-.about .contact-info ul {
+.about .contact ul {
     margin-bottom: 0;
 }
 
-.about .contact-info li {
+.about .contact li {
     margin-right: 30px;
 }
 
-.about .contact-info li:last-child {
+.about .contact li:last-child {
     margin-right: 0;
 }
 
-.about .contact-info li .fa {
+.about .contact li .fa {
     margin-right: 10px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* About
+    -------------------------------------------- */
+    .about .name {
+        font-size: 36px;
+    }
+
+    .about .title {
+        font-size: 22px;
+    }
+
+    .about .contact li {
+        margin-bottom: 15px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .about .contact li:last-child {
+        margin-bottom: 0;
+    }
 }
