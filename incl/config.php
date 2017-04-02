@@ -75,6 +75,6 @@
     * Navbar
     *
     */
-    $config["navbar"] = ["home", "projects", "about", "contact"];
+    $config["navbar"] = ["home", "projects", "about"];
 
 ?>
