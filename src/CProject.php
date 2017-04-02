@@ -4,12 +4,14 @@
         private $name;
         private $description;
         private $images;
+        private $tags;
 
-        public function __construct($name, $description, $images)
+        public function __construct($name, $description, $images, $tags)
         {
             $this->name = $name;
             $this->description = $description;
             $this->images = $images;
+            $this->tags = $tags;
         }
 
         public function getName() {
@@ -22,5 +24,9 @@
 
         public function getImages() {
             return $this->images;
+        }
+
+        public function getTags() {
+            return $this->tags;
         }
     }

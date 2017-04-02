@@ -2,6 +2,7 @@
     <?php $projects = $di->projects->getProjects(); ?>
     <?php for ($i = 0; $i < count($projects); $i++): ?>
     <?php $imgs = $projects[$i]->getImages(); ?>
+    <?php $tags = $projects[$i]->getTags(); ?>
     <?php $imgsCount = count($imgs); ?>
 
     <?php if ($i % 3 === 0): ?>
@@ -23,14 +24,17 @@
               </div>
             </div>
             <h3>
-                <?= $projects[$i]->getName(); ?>
+                <?= $projects[$i]->getName(); ?> <i class="fa fa-github" aria-hidden="true"></i>
             </h3>
             <p><?= $projects[$i]->getDescription(); ?></p>
+            <p>
+                <?php foreach ($tags as $tag): ?>
+                <span class="badge"><?= $tag; ?></span>
+                <?php endforeach; ?>
+            </p>
         </div>
     <?php if (($i % 3 === 2 && $i !== 0) || $i === count($projects) - 1): ?>
     </div>
     <?php endif;?>
     <?php endfor; ?>
-
-<hr>
 </div>

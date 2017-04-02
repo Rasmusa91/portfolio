@@ -46,6 +46,7 @@
     *
     */
     $config["CSS"] = [];
+    $config["CSS"][] = SERVER_PATH . "css/font-awesome-4.7.0/css/font-awesome.min.css";
     $config["CSS"][] = SERVER_PATH . "css/bootstrap.min.css";
     $config["CSS"][] = SERVER_PATH . "css/style.css";
 

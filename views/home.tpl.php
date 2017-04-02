@@ -36,10 +36,8 @@
       <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     </div>
     <div class="col-md-5">
-      <img class="featurette-image img-responsive center-block" data-src="http://www.skullspiration.com/wp-content/uploads/2013/08/colorful-skull.jpg" alt="Generic placeholder image">
+      <img class="featurette-image img-responsive center-block" src="http://images2.fanpop.com/image/photos/13400000/colorful-color-splash-13475086-500-500.jpg" alt="Generic placeholder image">
     </div>
   </div>
-
-  <hr class="featurette-divider">
 </div>
   <!-- /END THE FEATURETTES -->

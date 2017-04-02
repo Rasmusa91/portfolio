@@ -8,6 +8,10 @@ body {
   padding-top: 50px;
 }
 
+.vcenter {
+    display: flex;
+    align-items: center;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -151,7 +155,11 @@ body {
 -----------------------------------------------*/
 
 .projects {
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+.projects .row  {
+    margin-bottom: 20px;
 }
 
 /* Carousel base class */
@@ -159,7 +167,6 @@ body {
   height: 200px;
 }
 
-/* Declare heights because of positioning of img element */
 .projects .carousel .item {
   height: 200px;
 }
@@ -167,7 +174,6 @@ body {
 .projects .carousel-inner > .item > img {
   height: 200px;
 }
-
 
 
 /* About
