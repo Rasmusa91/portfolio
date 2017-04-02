@@ -3,5 +3,5 @@
 	{
 		use TInjectable;
 
-        public abstract function load();
+        public abstract function load($options = []);
     }

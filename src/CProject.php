@@ -26,6 +26,10 @@
             return $this->images;
         }
 
+        public function getFirstImage() {
+            return $this->images[0];
+        }
+
         public function getTags() {
             return $this->tags;
         }

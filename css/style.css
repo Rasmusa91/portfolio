@@ -28,45 +28,8 @@ body {
     width: auto;
 }
 
-
-/* CAROUSEL
--------------------------------------------------- */
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-    z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-    background-color: #777;
-}
-
-.carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-}
-
-
 /* Home
 ------------------------------------------------*/
-/* Carousel base class */
-.carousel-main.carousel {
-    height: 450px;
-    margin-bottom: 60px;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-main.carousel .item {
-    height: 450px;
-}
-
-.carousel-main.carousel-inner > .item > img {
-    min-width: 100%;
-    height: 450px;
-}
 
 .featurette-divider {
     margin: 80px 0; /* Space out the Bootstrap <hr> more */
@@ -93,6 +56,11 @@ body {
     margin-left: 10px;
 }
 
+.featurette img {
+    width: 500px;
+    height: 500px;
+}
+
 /* Projects
 -----------------------------------------------*/
 
@@ -102,14 +70,6 @@ body {
 
 .projects .row  {
     margin-bottom: 20px;
-}
-
-.projects .carousel .item {
-    height: 200px;
-}
-
-.projects .carousel-inner > .item > img {
-    height: 200px;
 }
 
 
@@ -201,13 +161,6 @@ body {
         padding-left: 0;
     }
 
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-        margin-bottom: 20px;
-        font-size: 21px;
-        line-height: 1.4;
-    }
-
     .featurette-heading {
         font-size: 50px;
     }
@@ -239,4 +192,85 @@ body {
     .about .contact li:last-child {
         margin-bottom: 0;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Makes images fully responsive */
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------- Carousel Styling ------------------- */
+
+.carousel-caption {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 0 0 10px 25px;
+  color: #fff;
+  text-align: left;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  margin: 0;
+  padding: 0 25px 25px 0;
+  text-align: right;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+
+/* ------------------- Section Styling - Not needed for carousel styling ------------------- */
+
+.section-white {
+   padding: 10px 0;
+}
+
+.section-white {
+  background-color: #fff;
+  color: #555;
+}
+
+@media screen and (min-width: 768px) {
+
+  .section-white {
+     padding: 1.5em 0;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .container {
+    max-width: 930px;
+  }
+
 }

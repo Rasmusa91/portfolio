@@ -1,43 +1,39 @@
-<!-- Marketing messaging and featurettes
-================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
-
 <div class = "marketing">
+    <?php $projects = $di->projects->getProjects(); ?>
+    <?php $projectsCount = count($projects); ?>
 
-  <!-- START THE FEATURETTES -->
+    <?php for ($i = 0; $i < $projectsCount; $i++): ?>
+    <?php $p = $projects[$i] ?>
 
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <?php if ($i % 2 === 0): ?>
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading"><?= $p->getName(); ?></h2>
+            <p class="lead"><?= $p->getDescription(); ?></p>
+        </div>
+        <div class="col-md-5">
+            <img class = "featurette-image img-responsive center-block" src="<?= SERVER_PATH . 'img/' . $p->getFirstImage(); ?>" alt="<?= $p->getName(); ?>">
+        </div>
     </div>
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive center-block" src="https://cloud.graphicleftovers.com/23228/739863/abstract-colorful-tree.-copy-space-.eps-8.jpg" alt="Generic placeholder image">
-    </div>
-  </div>
 
-  <hr class="featurette-divider">
+    <?php else: ?>
 
-  <div class="row featurette">
-    <div class="col-md-7 col-md-push-5">
-      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+            <h2 class="featurette-heading"><?= $p->getName(); ?></h2>
+            <p class="lead"><?= $p->getDescription(); ?></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+            <img class = "featurette-image img-responsive center-block" src="<?= SERVER_PATH . 'img/' . $p->getFirstImage(); ?>" alt="<?= $p->getName(); ?>">
+        </div>
     </div>
-    <div class="col-md-5 col-md-pull-7">
-      <img class="featurette-image img-responsive center-block" src="http://images2.fanpop.com/image/photos/13400000/colorful-color-splash-13475086-500-500.jpg" alt="Generic placeholder image">
-    </div>
-  </div>
+    <?php endif; ?>
 
-  <hr class="featurette-divider">
+    <?php if ($i !== $projectsCount - 1): ?>
+    <hr class="featurette-divider">
+    <?php endif; ?>
 
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive center-block" src="http://images2.fanpop.com/image/photos/13400000/colorful-color-splash-13475086-500-500.jpg" alt="Generic placeholder image">
-    </div>
-  </div>
+    <?php endfor; ?>
+
+
 </div>
-  <!-- /END THE FEATURETTES -->
