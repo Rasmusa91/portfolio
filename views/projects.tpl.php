@@ -24,7 +24,7 @@
               </div>
             </div>
             <h3>
-                <?= $projects[$i]->getName(); ?> <i class="fa fa-github" aria-hidden="true"></i>
+                <?= $projects[$i]->getName(); ?>
             </h3>
             <p><?= $projects[$i]->getDescription(); ?></p>
             <p>

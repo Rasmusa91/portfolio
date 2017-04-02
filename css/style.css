@@ -1,20 +1,8 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
 body {
     padding-bottom: 40px;
     color: #5a5a5a;
     padding-top: 50px;
 }
-
-.vcenter {
-    display: flex;
-    align-items: center;
-}
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -41,7 +29,7 @@ body {
 }
 
 
-/* CUSTOMIZE THE CAROUSEL
+/* CAROUSEL
 -------------------------------------------------- */
 
 /* Since positioning the image, we need to help out the caption */
@@ -62,10 +50,35 @@ body {
 }
 
 
-/* MARKETING CONTENT
--------------------------------------------------- */
+/* Home
+------------------------------------------------*/
+/* Carousel base class */
+.carousel-main.carousel {
+    height: 450px;
+    margin-bottom: 60px;
+}
 
-/* Center align the text within the three columns below the carousel */
+/* Declare heights because of positioning of img element */
+.carousel-main.carousel .item {
+    height: 450px;
+}
+
+.carousel-main.carousel-inner > .item > img {
+    min-width: 100%;
+    height: 450px;
+}
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
 .marketing .col-lg-4 {
     margin-bottom: 20px;
     text-align: center;
@@ -80,40 +93,6 @@ body {
     margin-left: 10px;
 }
 
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-    margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -1px;
-}
-
-
-/* Home
-------------------------------------------------*/
-/* Carousel base class */
-.carousel-main.carousel {
-    height: 450px;
-    margin-bottom: 60px;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-main.carousel .item {
-    height: 450px;
-}
-.carousel-main.carousel-inner > .item > img {
-    min-width: 100%;
-    height: 450px;
-}
-
-
 /* Projects
 -----------------------------------------------*/
 
@@ -123,11 +102,6 @@ body {
 
 .projects .row  {
     margin-bottom: 20px;
-}
-
-/* Carousel base class */
-.projects .carousel {
-    height: 200px;
 }
 
 .projects .carousel .item {
