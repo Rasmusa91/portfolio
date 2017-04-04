@@ -29,9 +29,7 @@
     });
 
     $di->routes->add('home', function() use($di) {
-        $di->dispatcher->setController('projects', [
-            'featured' => true
-        ]);
+        $di->dispatcher->setController('projects');
     });
 
     $di->routes->add('projects', function() use($di) {

@@ -15,7 +15,7 @@
 
         private function loadProjects()
         {
-            $sql = "SELECT p.id, p.name, p.description, p.featured_image, (
+            $sql = "SELECT p.id, p.name, p.description, p.source_control, p.repository, (
 						SELECT GROUP_CONCAT(\"\", project_images.url)
 						FROM project_images
 						WHERE project_images.p_id = p.id
@@ -24,15 +24,12 @@
 						FROM project_tags
 						WHERE project_tags.p_id = p.id
 					) AS tags
-					FROM projects AS p";
-
-			if (array_key_exists('featured', $this->options) && $this->options['featured']) {
-				$sql .= " WHERE featured = 1 AND featured_image IS NOT NULL";
-			}
+					FROM projects AS p
+					ORDER BY IF(rank=0, 10, rank) ASC";
 
 			$res = $this->di->db->ExecuteSelectQueryAndFetchAll($sql);
 			foreach($res as $val) {
-				$this->projects[] = new CProject($val->name, $val->description, explode(',', $val->images), $val->featured_image, explode(',', $val->tags));
+				$this->projects[] = new CProject($val->name, $val->description, explode(',', $val->images), explode(',', $val->tags), $val->source_control, $val->repository);
 			}
         }
 

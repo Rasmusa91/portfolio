@@ -58,13 +58,15 @@
     $config["JS"] = [];
     $config["JS"][] = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js";
     $config["JS"][] = SERVER_PATH . "js/bootstrap.min.js";
+    //$config["JS"][] = SERVER_PATH . "js/jssor.slider-23.0.0.min.js";
 
 
     /**
     * Page
     *
     */
-    $config["page"] = $config["URL"]["mainPage"];
+    // $config["page"] = $config["URL"]["mainPage"];
+    $config["page"] = 'home';
 
     if(!file_exists('views/' . $config["page"] . '.tpl.php')) {
         $config["page"] = "error";
