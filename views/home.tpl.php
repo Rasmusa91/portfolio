@@ -11,16 +11,10 @@
 
         <div class="social container-fluid text-center">
              <ul class="social-list list-inline">
+                 <li><a href="mailto:rasmus.a-91@hotmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
                  <li><a href="https://www.linkedin.com/in/rasmus-appelqvist/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                  <li><a href="https://github.com/rasmusa91/"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
              </ul>
-         </div>
-
-        <div class="contact container text-center">
-            <ul class="list-inline">
-                <li class="email"><i class="fa fa-envelope"></i><a href="mailto:rasmus.a-91@hotmail.com">rasmus.a-91@hotmail.com</a></li>
-                <li><i class="fa fa-phone"></i> <a href="tel: 0123456789">070-575 37 54</a></li>
-            </ul>
         </div>
     </div>
 
