@@ -5,7 +5,7 @@
             <h1 class="name">Rasmus Appelqvist</h1>
             <div class="title">Software Developer</div>
             <div class="profile">
-                <p>Profile info goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet.</p>
+                <p>My name is Rasmus Appelqvist and I consider myself to be a software developer. For the last six years I have been educating myself within different aspects of software development, such as game development and web development. I am as comfortable with front-end development as I am with the back-end development. In parallel with my studies I have been freelancing my services as well as I have worked on personal projects. Some of these projects that actually have a visual presentation can be viewed below, for other projects, please take a look at my GitHub profile.</p>
             </div>
         </div>
 
